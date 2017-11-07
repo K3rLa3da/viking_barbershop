@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../public/styles/components/tabs.less'
 
 const Tabs = (props) => {
     const showData = (e) => {
@@ -6,17 +7,17 @@ const Tabs = (props) => {
     };
 
     const tabs = props.tabs.map((tab) =>
-        <a id={tab.id}
-           key={tab.id}
-           className={`btn ${props.activeTabId === tab.id ? 'active blue' : ''}`}
-           onClick={showData}>
+        <div id={tab.id}
+             key={tab.id}
+             className={`${props.activeTab === tab.id ? 'active-tab' : ''}`}
+             onClick={showData}>
             {tab.name}
-        </a>
+        </div>
     );
 
     return (
-        <div className="container">
-            <div className="default-tabs" style={{width: props.width || (150 * props.tabs.length + 'px')}}>
+        <div className="tabs-container">
+            <div className="default-tabs">
                 {tabs}
             </div>
         </div>
