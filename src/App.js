@@ -41,7 +41,7 @@ class App extends React.Component {
     }
 
     getTabContent(activeTab) {
-        switch(this.state.activeTab){
+        switch (this.state.activeTab) {
             case 'home':
                 return <HomeTab/>;
             case 'photo':

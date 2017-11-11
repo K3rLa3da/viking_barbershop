@@ -17,17 +17,23 @@ const Header = () => {
                     <div className="title-block">
                         <div>V I K I N G</div>
                         <div>ul. Sienkiewicza 52, 50-349 Wrocław</div>
-                        <div className="links-block">
-                            <a target="_blank"
-                               href="https://booksy.net/pl-pl/4494_viking-barbershop-tattoo-studio_barberzy_13750_wroclaw">
-                                Umów sie na wizytę</a>
-                            <a target="_blank" href="https://web.facebook.com/VikingBartoo/">
-                                <div>Facebook</div>
-                                <img src={`/build/${facebook}`}/>
-                            </a>
-                        </div>
                     </div>
-                    <img src={`/build/${helmet}`}/>
+                    <div className="helmet-block">
+                        <img src={`/build/${helmet}`}/>
+                    </div>
+                </div>
+                <div className="links-block">
+                    <div>
+                        <a target="_blank"
+                           href="https://booksy.net/pl-pl/4494_viking-barbershop-tattoo-studio_barberzy_13750_wroclaw">
+                            Umów sie na wizytę</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://web.facebook.com/VikingBartoo/">
+                            <div>Facebook</div>
+                            <img src={`/build/${facebook}`}/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

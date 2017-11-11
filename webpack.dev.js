@@ -29,8 +29,8 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                use: 'file-loader',
+                test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
+                use: 'file-loader'
             }
         ]
     },

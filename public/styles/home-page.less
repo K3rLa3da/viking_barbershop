@@ -1,6 +1,150 @@
 html, body {
-  background-color: #FAFAFA;
+  background-color: #eeeeee;
   font-family: RobotoRegular;
   margin: auto;
+
+  @media all and (min-width: 1024px) {
+    .page-container {
+      width: 80%;
+      min-width: 1024px;
+      margin: 0 auto;
+
+      .home-page-box {
+        height: 450px;
+        margin-top: 20px;
+        & > :nth-child(1) {
+          float: left;
+          width: 45%;
+        }
+        & > :nth-child(2) {
+          margin-left: 10%;
+          float: left;
+          width: 45%;
+        }
+        .home-text-box {
+          text-align: center;
+          height: 60%;
+          .title {
+            margin-top: 20px;
+            font-size: 36px;
+            color: #5b5b5b;
+            font-weight: bold;
+          }
+          .tagline {
+            margin-top: 30px;
+            font-size: 30px;
+            color: #9c4e17;
+            font-style: italic;
+            font-weight: bold;
+          }
+          .text-content {
+            width: 100%;
+            margin-top: 60px;
+            font-size: 26px;
+            color: #9c928a;
+            font-style: italic;
+          }
+        }
+        .home-image-box {
+          text-align: center;
+          img {
+            margin: 0 auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1680px) {
+    .page-container {
+      .home-page-box {
+        height: 400px;
+        .home-text-box {
+          .title {
+            font-size: 32px;
+          }
+          .tagline {
+            font-size: 26px;
+          }
+          .text-content {
+            margin-top: 30px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1480px) {
+    .page-container {
+      .home-page-box {
+        height: 350px;
+        .home-text-box {
+          .title {
+            font-size: 26px;
+          }
+          .tagline {
+            font-size: 21px;
+          }
+          .text-content {
+            margin-top: 20px;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1023px) {
+    .page-container {
+      min-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+
+      .home-page-box {
+        height: 450px;
+        margin-top: 20px;
+        & > :nth-child(1) {
+          float: none;
+          width: 100%;
+        }
+        & > :nth-child(2) {
+          float: none;
+          width: 100%;
+        }
+        .home-text-box {
+          text-align: center;
+          .title {
+            margin-top: 20px;
+            font-size: 36px;
+            color: #5b5b5b;
+            font-weight: bold;
+          }
+          .tagline {
+            margin-top: 30px;
+            font-size: 30px;
+            color: #9c4e17;
+            font-style: italic;
+            font-weight: bold;
+          }
+          .text-content {
+            width: 100%;
+            margin-top: 60px;
+            font-size: 26px;
+            color: #9c928a;
+            font-style: italic;
+          }
+        }
+        .home-image-box {
+          text-align: center;
+          img {
+            margin: 0 auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
