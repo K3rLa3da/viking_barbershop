@@ -14,7 +14,7 @@ class App extends React.Component {
         super(props);
         this.state = {
             activeTab: 'home',
-        }
+        };
 
         this.tabs = [
             {
@@ -27,7 +27,7 @@ class App extends React.Component {
             },
             {
                 id: 'price',
-                name: 'Price'
+                name: 'Cennik'
             },
             {
                 id: 'contacts',

@@ -3,7 +3,7 @@ import React from 'react';
 import photo1 from '../../public/image/photo/3.jpg'
 import photo2 from '../../public/image/photo/2.jpg'
 
-const HomeTab = (props) => {
+const HomeTab = () => {
     return (
         <div className="page-container">
             <div className="home-page-box">
