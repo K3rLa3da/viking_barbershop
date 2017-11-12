@@ -30,3 +30,33 @@
     }
   }
 }
+@media all and (max-width: 1023px) {
+  .tabs-container {
+    min-width: 540px;
+    color: white;
+    font-size: 22px;
+    height: 40px;
+    background-color: #929292;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    .default-tabs {
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      div {
+        float: left;
+        width: 25%;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          background-color: #5b5b5b;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        &.active-tab{
+          background-color: #353535;
+        }
+      }
+    }
+  }
+}
