@@ -1,9 +1,11 @@
 import React from 'react';
 import cennik from '../constants/price'
 
+import '../../public/styles/price-page.less'
+
 const PriceTab = (props) => {
     return (
-        <div className="page-container">
+        <div className="price-container">
             {cennik.map(service => <ServiceTable key={service.id}
                                                  title={service.id}
                                                  priceList={service.priceList}/>)}
@@ -38,9 +40,11 @@ const Row = (props) => {
             </td>
             <td>
                 <div className="price-time">{props.priceTag.time}</div>
+                <div className="price-time">{props.priceTag.time2}</div>
             </td>
             <td>
                 <div className="price-cost">{props.priceTag.price}</div>
+                <div className="price-cost">{props.priceTag.price2}</div>
             </td>
         </tr>
     );

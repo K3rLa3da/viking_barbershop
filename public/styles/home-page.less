@@ -1,6 +1,6 @@
 html, body {
   background-color: #eeeeee;
-  font-family: RobotoRegular;
+  font-family: cursive;
   margin: auto;
 
   @media all and (min-width: 1024px) {
@@ -10,7 +10,7 @@ html, body {
       margin: 0 auto;
 
       .home-page-box {
-        height: 450px;
+        height: 500px;
         margin-top: 20px;
         & > :nth-child(1) {
           float: left;
@@ -25,24 +25,22 @@ html, body {
           text-align: center;
           height: 60%;
           .title {
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 36px;
             color: #5b5b5b;
             font-weight: bold;
           }
           .tagline {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 30px;
             color: #9c4e17;
-            font-style: italic;
             font-weight: bold;
           }
           .text-content {
             width: 100%;
-            margin-top: 60px;
+            margin-top: 45px;
             font-size: 26px;
             color: #9c928a;
-            font-style: italic;
           }
         }
         .home-image-box {
@@ -62,27 +60,47 @@ html, body {
         height: 400px;
         .home-text-box {
           .title {
-            font-size: 32px;
+            font-size: 30px;
           }
           .tagline {
-            font-size: 26px;
+            font-size: 25px;
           }
           .text-content {
             margin-top: 30px;
-            font-size: 22px;
+            font-size: 21px;
           }
         }
       }
     }
   }
 
-  @media all and (max-width: 1480px) {
+  @media all and (max-width: 1530px) {
     .page-container {
       .home-page-box {
         height: 350px;
         .home-text-box {
           .title {
             font-size: 26px;
+          }
+          .tagline {
+            font-size: 21px;
+          }
+          .text-content {
+            margin-top: 20px;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1530px) {
+    .page-container {
+      .home-page-box {
+        height: 350px;
+        .home-text-box {
+          .title {
+            font-size: 24px;
           }
           .tagline {
             font-size: 21px;
@@ -125,7 +143,6 @@ html, body {
             margin-top: 30px;
             font-size: 30px;
             color: #9c4e17;
-            font-style: italic;
             font-weight: bold;
           }
           .text-content {
@@ -133,7 +150,6 @@ html, body {
             margin-top: 60px;
             font-size: 26px;
             color: #9c928a;
-            font-style: italic;
           }
         }
         .home-image-box {

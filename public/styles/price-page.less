@@ -1,0 +1,94 @@
+ @media all and (min-width: 1024px) {
+   .price-container {
+     width: 60%;
+     min-width: 1024px;
+     margin: 0 auto;
+
+     .price-table {
+       margin-top: 20px;
+       .table-title {
+         color: #9c4e17;
+         font-size: 32px;
+         font-weight: bold;
+       }
+       table {
+         width: 100%;
+         border-collapse: collapse;
+         tbody {
+           tr {
+             border: none;
+             height: 70px;
+             border-bottom: 1px solid #bfc5c8;
+             color: #5b5b5b;
+             & > :nth-child(1) {
+               width: 80%;
+               .price-title{
+                 font-size: 24px;
+               }
+               .price-description{
+                 font-size: 20px;
+                 color: #9c928a;
+               }
+             }
+             & > :nth-child(2) {
+               font-size: 20px;
+               width: 10%;
+             }
+             & > :nth-child(3) {
+               font-size: 20px;
+               width: 10%;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+
+ @media all and (max-width: 1023px) {
+   .price-container {
+     width: 90%;
+     min-width: 540px;
+     margin: 0 auto;
+
+     .price-table {
+       margin-top: 20px;
+       .table-title {
+         color: #9c4e17;
+         font-size: 32px;
+         font-weight: bold;
+       }
+       table {
+         width: 100%;
+         border-collapse: collapse;
+         tbody {
+           tr {
+             border: none;
+             height: 70px;
+             border-bottom: 1px solid #bfc5c8;
+             color: #5b5b5b;
+             & > :nth-child(1) {
+               width: 80%;
+               .price-title{
+                 font-size: 24px;
+               }
+               .price-description{
+                 font-size: 20px;
+                 color: #9c928a;
+               }
+             }
+             & > :nth-child(2) {
+               width: 10%;
+               min-width: 65px;
+             }
+             & > :nth-child(3) {
+               width: 10%;
+               min-width: 80px;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+
